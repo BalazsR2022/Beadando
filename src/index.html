@@ -11,59 +11,49 @@ Github: https://github.com/BalazsR2022/Beadando
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gömb térfogat és felszín számítása</title>
-    <script src="script.js"></script>
+    <script src="gombter.js"></script>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     
     
 
 </head>
-<body>
+<body >
+  
+  
+    <img src="zold-gomb-hatterkep-38843.jpg" alt="gömb">    
+  
+  
 
-    <div class="container">     
+    <div id="title" class="container">     
        <h1>A gömb térfogatának és felszínének számítása</h1>
-
       </div>  
 
-    <div class="sugar">     
-          
+    <div id="sugar" class="container">  
       <form>
-        <h6>Gömb sugara(cm)</h6>
-        
-        <input type="text" placeholder="ide írja a gömb sugarát" class="form-control">
-
+       
+       Gömb sugara (cm): <input type="text" placeholder="Ide írd a gömb sugarát" class="form-control" ><br>
       </form>  
-        
-        
- 
-        <button  type="submit" class="btn btn-success">Számítás</button>
+
+      
+      <button  type="submit"class="btn btn-success" value="sugar" >Számol</button>
+      
 
       </div>  
-    <div class="container">     
-        
-        <label id="gombterfogat">Gömb térfogata (cm<sup>3</sup>)</label>
+    <div id="eredmenyterfogat" class="container">     
+       <label id="gombterfogat">Gömb térfogata (cm<sup>3</sup>)</label>
         <input class="form-control">
-        
- 
-        
-
       </div>  
      
-    <div class="container">     
-        
+    <div id="eredmenyfelszin" class="container">      
         <label id="gombfelszine">Gömb felszíne (cm<sup>2</sup>)</label>
         <input class="form-control">
-        
- 
-        
-
       </div>  
-     
-
+  
     
     
+  
 </body>
 </html>
