@@ -6,30 +6,35 @@
 //Date: 2023-02-03
 //Github: https://github.com/BalazsR2022/Beadando
 
+const gomb = document.querySelector('button[value="sugar"]');
+gomb.addEventListener('click', szamol);
+
 const form = document.querySelector('form');
-form.addEventListener('click', function(e) {
+form.addEventListener('submit', function(e) {
   e.preventDefault();
-  //itt kell meghívni a függvényeket és kiiratni a mezőbe az eredményeket
+});
 
+
+
+  function szamolTerfogat(r) {
+    const pi = Math.PI;
+    return (4/3) * pi * Math.pow(r, 3);
+  }
   
-const sugar = document.querySelector('.form-control');
-const pi = Math.PI;
-const r = Number(sugar.value);
-const Terfogat = szamitTerfogat(r);
-const Felszin = szamitFelszin(r);
+  function szamolFelszin(r) {
+    const pi = Math.PI;
+    return 4 * pi * Math.pow(r, 2);
+  }
 
+  function szamol() {
+    const sugar = document.querySelector('#megadottertek');
+    const r = Number(sugar.value);
+    const terfogat = szamolTerfogat(r);
+    const felszin = szamolFelszin(r);
+    const terfogatInput = document.querySelector('#gombterfogat');
+    terfogatInput.value = terfogat;
+    const felszinInput = document.querySelector('#gombfelszine');
+    felszinInput.value = felszin;
+  }
+  
 
-
-function szamitTerfogat(r) {
-  return (4/3) * pi * Math.pow(r, 3);
-}
-
-function szamitFelszin(r) {
-  return 4 * pi * Math.pow(r, 2);
-}
-
-
-
-
-console.log(`A gömb térfogata: ${Terfogat} cm^3`);
-console.log(`A gömb felszíne: ${Felszin} cm^2`);

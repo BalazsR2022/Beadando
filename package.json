@@ -2,7 +2,7 @@
   "name": "Gombter",
   "version": "1.0.0",
   "description": "Gomb terfogat  es felszin szamitasa",
-  "main": "index.js",
+  "main": "gombter.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx lite-server"

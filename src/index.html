@@ -29,27 +29,26 @@ Github: https://github.com/BalazsR2022/Beadando
 
     <div id="title" class="container">     
        <h1>A gömb térfogatának és felszínének számítása</h1>
+       <h2>Author: Balázs Réka Copyright: 2023, Balázs Réka
+            Group: Szoft 1-2-E Date: 2023-02-03</h2>
       </div>  
 
     <div id="sugar" class="container">  
-      <form>
+      <form name="sugarurlap">
        
-       Gömb sugara (cm): <input type="text" placeholder="Ide írd a gömb sugarát" class="form-control" ><br>
-      </form>  
-
-      
-      <button  type="submit"class="btn btn-success" value="sugar" >Számol</button>
-      
-
+       Gömb sugara (cm): <input type="text" placeholder="Ide írd a gömb sugarát" class="form-control" id="megadottertek"><br>
+      <button  type="button" class="btn-success" value="sugar"onclick="szamol()">Számol</button>
+      </form>
       </div>  
+
     <div id="eredmenyterfogat" class="container">     
-       <label id="gombterfogat">Gömb térfogata (cm<sup>3</sup>)</label>
-        <input class="form-control">
+       <label for="gombterfogat">Gömb térfogata (cm<sup>3</sup>)</label>
+        <input class="form-control" id="gombterfogat">
       </div>  
      
     <div id="eredmenyfelszin" class="container">      
-        <label id="gombfelszine">Gömb felszíne (cm<sup>2</sup>)</label>
-        <input class="form-control">
+        <label for="gombfelszine">Gömb felszíne (cm<sup>2</sup>)</label>
+        <input class="form-control" id="gombfelszine">
       </div>  
   
     
